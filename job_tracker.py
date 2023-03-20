@@ -11,12 +11,11 @@ df = pd.read_excel(EXCEL_FILE)
 
 layout = [
     [sg.Text('Fill out the following fields:')],
-    [sg.Text('Employer', size=(15,1)), sg.InputText(key='Employer')],
+    [sg.Text('Employer', size=(15,2)), sg.InputText(key='Employer')],
     [sg.Text('Position', size=(15,1)), sg.InputText(key='Position')],
     [sg.Text('Status', size=(15,1)), sg.Combo(['Applied', 'Waiting for Interview', 'Rejected'], key='Status')],
     [sg.Text('Link', size=(15,1)), sg.InputText(key='Link')],
-    [sg.Text('Date Applied', size=(15,1)), sg.InputText(key='Date Applied'),
-     sg.CalendarButton("Select Date", close_when_date_chosen=True, target="Date", format='%Y:%m:%d', size=(10,1))],
+    [sg.Text('Date Applied', size=(15,1)), sg.InputText(key='Date Applied')],
     [sg.Text('Pay', size=(15,1)), sg.InputText(key='Pay')],
     [sg.Submit(), sg.Button('Clear'), sg.Exit()]
 ]
