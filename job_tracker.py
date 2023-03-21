@@ -20,7 +20,7 @@ layout = [
     [sg.Submit(), sg.Button('Clear'), sg.Exit()]
 ]
 
-window = sg.Window('Simple data entry form', layout)
+window = sg.Window('Job Tracker', layout)
 
 def clear_input():
     for key in values:
